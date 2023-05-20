@@ -1,0 +1,135 @@
+/* GENERAL */
+body {
+    background: #272727;
+    margin:0;
+    height: 2000px;
+}
+
+/* MAIN ARCHITECTURE ELEMENTS index.html */
+
+/* ----top section---- */
+#top {
+    height:600px;
+    width: 100%;
+    background-color: aqua;
+}
+
+/* ----header---- */
+header {
+    /* E4A95B */
+    background-color: black;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    font-size: 40px;
+    font-weight: 700;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url('images/fontback.jpeg');
+    background-size: 400px;
+}
+
+header div h1 {
+    margin: 0pt;
+}
+
+header div img {
+    margin-top: 25px;
+    height: 40px;
+}
+
+header div button {
+    animation: none;
+    background-color: transparent;
+    border: transparent;
+    opacity: 1;
+}
+
+.buttonHide {
+    opacity: 1;
+    animation:ani 1.5s ;
+    opacity: 0;
+}
+
+.scrollFix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index : 2;
+}
+
+/* ----main---- */
+main section {
+    margin: 20px 30px;
+}
+#general img {
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+
+/* ----aside---- */
+.asideShow {
+    display: block; 
+    transform: translateX(-150%);
+    animation: aniAsideShow 1s forwards;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:35%;
+    z-index: 2;
+    background-color: rgba(143, 0, 255, 0.7);
+}
+
+.asideHide {
+    transform: translateX(0%);
+    animation: aniAsideHide 1s forwards;
+}
+
+aside {
+    display: none;
+}
+
+aside div button {
+    margin: 20px 15px ;
+    animation: none;
+    background-color: transparent;
+    border: transparent;
+    opacity: 1;
+}
+
+aside div img {
+    height: 45px;
+}
+
+.buttonShow {
+    opacity: 0;
+    animation:aniBack 2s;
+    opacity: 1;
+}
+
+/*  */
+@keyframes ani {
+    100% {opacity: 0;}
+    0% {opacity: 1;}
+}
+
+@keyframes aniBack {
+    100% {opacity: 1;}
+    0% {opacity: 0;}
+}
+
+@keyframes aniAsideShow {
+    0% {transform: translateX(150%);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes aniAsideHide {
+    0% {transform: translateY(0);}
+    100% {transform: translateX(150%);}
+}
