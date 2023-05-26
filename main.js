@@ -16,6 +16,28 @@ window.onload=function(){
             }
         });
     });
+    $(document).ready(function() {
+        $(window).bind('scroll', function() {
+            let upHeight = $(window).height() - 120;
+            if ($ (window).scrollTop () > upHeight) {
+                document.getElementById("upButton").style.paddingBottom="90px";
+                $(document.getElementById("upButton")).addClass('scrollFixButton');
+            } else if ($ (window).scrollTop () < upHeight){
+                document.getElementById("upButton").style.paddingBottom="0px";
+                $(document.getElementById("upButton")).removeClass('scrollFixButton');
+            }
+        });
+    });
+    //scroll
+    $('a[href^="#"').on('click', function() {
+
+        let href = $(this).attr('href');
+    
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        });
+        return false;
+    });
     // working event listeners
     btnMenuOpen.addEventListener("click", function(){
         console.log("1");
