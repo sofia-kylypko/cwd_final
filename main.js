@@ -39,4 +39,26 @@ window.onload=function(){
         document.getElementById("asideNav").classList.add("asideHide");
     });
     
+
+
+
+
+    // Gallery Scripts Start
+    // Card animation
+    let cards = document.querySelectorAll(".cards");
+    
+    var counter = 0;                        // counter 
+
+    function myLoop() {                     //  function to loop
+        setTimeout(function() {             //  call every 100ms
+            cards[counter].style.bottom = "0";
+            cards[counter].style.opacity = "1"; 
+            counter++;                    //  increment the counter
+            if (counter < 5) {           //  if the counter < 5, loop back
+              myLoop();       
+            }  
+        }, 100)
+    }
+    myLoop();  
+    // Gallery Scripts end
 }
