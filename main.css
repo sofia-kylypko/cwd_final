@@ -9,6 +9,9 @@ body {
     height: auto;
     /* font-family: "Russo One"; */
 }
+body a {
+    text-decoration: none;
+}
 /* MAIN ARCHITECTURE ELEMENTS index.html */
 
 /* ----top section---- */
@@ -21,15 +24,15 @@ body {
     background-position-y: 15%;
 }
 #top h1{
-    display: block;
+    color: rgba(204, 172, 172, 0.747);
     text-align: right;
-    margin: 0 0 0 auto;
+    margin: 0 20px 0 auto;
     padding-top: -20px;
     width: 50%;
-    font-size: 90px;
+    font-size: 70px;
 }
 #top h1 span {
-    font-size: 160px;
+    font-size: 140px;
     color: white;
 }
 /* ----header---- */
@@ -40,9 +43,9 @@ header {
     display: flex;
     justify-content: space-between;
 }
-header div {
+header div a h1{
     /* font-family: ; */
-    font-size: 40px;
+    font-size: 80px !important;
     font-weight: 700;
     background-clip: text;
     -webkit-background-clip: text;
@@ -50,29 +53,24 @@ header div {
     background-image: url('images/fontback.jpeg');
     background-size: 400px;
 }
-
 header div h1 {
-    margin: 0pt;
+    margin: 0px;
 }
-
 header div img {
     margin-top: 25px;
     height: 40px;
 }
-
 header div button {
     animation: none;
     background-color: transparent;
     border: transparent;
     opacity: 1;
 }
-
 .buttonHide {
     opacity: 1;
     animation:ani 1.5s ;
     opacity: 0;
 }
-
 .scrollFix {
     position: fixed;
     top: 0;
@@ -80,7 +78,24 @@ header div button {
     right: 0;
     z-index : 3;
 }
-
+/* ----footer---- */
+footer {
+    background-color: rgb(180, 194, 255);
+    padding: 20px 20px 10px 20px;
+}
+footer p {
+    display: block;
+    width: 50%;
+    margin: auto auto 10px auto;
+    text-align: center;
+}
+footer p a {
+    text-decoration: underline;
+    color: black;
+}
+footer p a:hover {
+    color: blueviolet;
+}
 /* ----main---- */
 main section {
     margin: 20px 30px;
@@ -170,7 +185,21 @@ main #circles .text p {
 main #principles {
     text-align: center;
     color: white;
-    margin-top: -40px;
+    margin-top: -70px;
+}
+main #principles h1 {
+    font-size:xx-large;
+}
+main #principles p {
+    margin-top: -15px;
+}
+main #principles p a {
+    color: white;
+    text-decoration: underline;
+}
+main #principles p a:hover {
+    text-decoration: none;
+    color: rgb(255, 218, 115); 
 }
 main #principles .stuckHolder {
     width: 80%;
@@ -180,38 +209,55 @@ main #principles .stuckHolder {
     grid-template-rows: 250px; 
 }
 main #principles .stuckHolder div {
-    margin: 10px;
+    margin: 20px;
     background-color: gray;
     border-radius: 20px;
     padding: 15px;
+    box-shadow: 5px 5px rgba(255, 0, 0, 0.726);
 }
-/* main #principles .stuckHolder div{
-    display: block;
-    align-self:center;
-} */
+main #principles .stuckHolder div p {
+    margin-top: 20px;
+    font-size: large;
+}
 main #principles .stuckHolder div:first-child {
     grid-row: 1/3;
     grid-column: 1/2;
+    background-color: #B0C4DE;
+    border: solid 3px #3374c9;
 }
 main #principles .stuckHolder div:nth-child(2) {
     grid-row: 1/2;
     grid-column: 2/3;
+    background-color:#DEB887;
+    border: solid 3px #d18d35;
 }
 main #principles .stuckHolder div:nth-child(3) {
     grid-row: 1/2;
     grid-column: 3/4;
+    background-color: #9370DB;
+    border: solid 3px #642bd6;
 }
 main #principles .stuckHolder  a.last-child {
     grid-row: 2/3;
-    grid-column: 2/4 ;
+    grid-column: 2/4;
+    color: white;
+    margin-top: -20px;
+    padding:0;
+}
+main #principles .stuckHolder  a.last-child div {
+    background-color: #D8BFD8;
+    border: solid 3px #a850a8;
+}
+main #principles .stuckHolder  a.last-child:hover div{
+    border: solid 3px white;
 }
 /* ----REASON---- */
 #reason {
     width: 50%;
     padding: 20px;
-    margin: 40px auto 50px auto;
+    margin: 70px auto 50px auto;
     height: auto;
-    border: solid 3px white;
+    border: solid 2px white;
     border-radius: 20px;
     color: white;
 }
@@ -233,6 +279,26 @@ main #principles .stuckHolder  a.last-child {
     width: 70%;
     height: 300px;
     margin:  30px auto auto auto;
+    border-radius: 20px;
+}
+/* ----button up---- */
+#upButton {
+
+}
+#upButton a div {
+    width: 45px;
+    margin: -40px 10px 0 auto;  
+}
+#upButton a div img {
+    opacity: 0.8;
+    height: 45px;
+} 
+.scrollFixButton {
+    position: fixed;
+    top: 670px;
+    left: 0;
+    right:0;
+    z-index : 3;
 }
 /* ----aside---- */
 .asideShow {
