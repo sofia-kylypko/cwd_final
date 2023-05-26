@@ -295,7 +295,6 @@ main #principles .stuckHolder  a.last-child:hover div{
     animation: aniUp 1s forwards;
     position: fixed;
     top: 640px;
-    left: 0;
     right:0;
     z-index : 3;
 }
