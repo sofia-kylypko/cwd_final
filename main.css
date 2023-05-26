@@ -80,7 +80,7 @@ header div button {
 }
 /* ----footer---- */
 footer {
-    background-color: rgb(180, 194, 255);
+    background-color: rgb(186, 191, 214);
     padding: 20px 20px 10px 20px;
 }
 footer p {
@@ -282,9 +282,6 @@ main #principles .stuckHolder  a.last-child:hover div{
     border-radius: 20px;
 }
 /* ----button up---- */
-#upButton {
-
-}
 #upButton a div {
     width: 45px;
     margin: -40px 10px 0 auto;  
@@ -294,8 +291,10 @@ main #principles .stuckHolder  a.last-child:hover div{
     height: 45px;
 } 
 .scrollFixButton {
+    transform: translateY(-150%);
+    animation: aniUp 1s forwards;
     position: fixed;
-    top: 670px;
+    top: 640px;
     left: 0;
     right:0;
     z-index : 3;
@@ -308,20 +307,39 @@ main #principles .stuckHolder  a.last-child:hover div{
     position: fixed;
     top: 0;
     right: 0;
-    width:35%;
-    z-index: 3;
-    background-color: rgba(143, 0, 255, 0.7);
+    width:30%;
+    z-index: 4;
+    background-color: rgba(143, 0, 255, 0.9);
 }
 
 .asideHide {
     transform: translateX(0%);
     animation: aniAsideHide 1s forwards;
 }
-
 aside {
     display: none;
 }
-
+aside div p {
+    color: white;
+    text-align: center;
+    font-size:x-large;
+}
+aside div ul {
+    font-size: larger;
+    display: block;
+    width: 70%;
+    margin: 30px 30px auto auto;
+    list-style-image: url(images/right-arrow.png);
+}
+aside div ul li a {
+    color: white;
+}
+aside div ul li a:hover {
+    text-decoration: underline;
+}
+aside div ul li .activeLink {
+    color: rgb(230, 199, 199);
+}
 aside div button {
     margin: 20px 15px ;
     animation: none;
@@ -361,6 +379,10 @@ aside div img {
     100% {transform: translateX(150%);}
 }
 
+@keyframes aniUp {
+    0% {transform: translateY(-10%);}
+    100% {transform: translateY(15%);}
+}
 
 
 
