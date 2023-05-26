@@ -315,13 +315,7 @@ aside div img {
     box-sizing: border-box;
     text-decoration: none;
 }
-.galleryContainer{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
+
 .galleryContainer section{
     display: flex;
     flex-wrap: wrap;
