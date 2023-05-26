@@ -403,19 +403,8 @@ aside div img {
     box-sizing: border-box;
     text-decoration: none;
 }
-.galleryContainer{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.galleryContainer section{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+#galleryBody{
+    overflow-x: hidden;
 }
 .galleryNavigation{
     position: relative;
@@ -453,8 +442,25 @@ aside div img {
     text-align: justify;
     padding: 0 0.5rem;
 } 
-
-/* SLIDE SHOW CSS FOR GALLERY PAGE   */
+.galleryContainer section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.galleryContainer .imagesCover{
+    position: relative;
+}
+.galleryContainer .imagesCover h1{
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    font-size: 45px;
+    font-weight: bold;
+}
+/* SLIDE SHOW CSS FOR GALLERY PAGE   
 .slideshow-container {
     width: 100%;
     max-width: 800px;
@@ -492,4 +498,4 @@ aside div img {
   .prev-btn:hover,
   .next-btn:hover {
     background-color: #aaa;
-  }
+  }*/
