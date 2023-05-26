@@ -14,10 +14,7 @@ window.onload=function(){
                 document.getElementById("top").style.paddingBottom="0px";
                 $('header').removeClass('scrollFix');
             }
-        });
-    });
-    $(document).ready(function() {
-        $(window).bind('scroll', function() {
+
             let upHeight = $(window).height() - 120;
             if ($ (window).scrollTop () > upHeight) {
                 document.getElementById("upButton").style.paddingBottom="90px";
