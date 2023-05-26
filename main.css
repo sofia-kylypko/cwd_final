@@ -1,5 +1,8 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=M+PLUS+Rounded+1c:wght@500&family=Russo+One&display=swap');
+html{
+    scroll-behavior: smooth;
+} 
 body {
     background: #272727;
     margin:0;
@@ -357,3 +360,114 @@ aside div img {
     0% {transform: translateY(0);}
     100% {transform: translateX(150%);}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GALLERY PAGE STYLE */
+#galleryBody *{ 
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.galleryContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.galleryContainer section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.galleryNavigation{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.galleryNavigation a{
+    color: white;
+}
+.galleryNavigation a .cards{
+    position: relative;
+    bottom: -100px;
+    opacity: 0;
+    width: 300px;
+    border-radius: 20px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.galleryNavigation .cards img{
+    transition: all 0.5s;
+}
+.galleryNavigation a .cards:hover img{
+    transform: scale(1.02);
+}
+.galleryNavigation a .cards img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.galleryNavigation a .cards p{
+    text-align: justify;
+    padding: 0 0.5rem;
+} 
+
+/* SLIDE SHOW CSS FOR GALLERY PAGE   */
+.slideshow-container {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .active {
+    opacity: 1;
+  }
+  
+  .controls {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: #aaa;
+  }
