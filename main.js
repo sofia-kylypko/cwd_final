@@ -11,7 +11,6 @@ window.onload=function(){
                 document.getElementById("top").style.paddingBottom="90px";
                 $('header').addClass('scrollFix');
             } else {
-                document.getElementById("top").style.paddingBottom="0px";
                 $('header').removeClass('scrollFix');
             }
 
