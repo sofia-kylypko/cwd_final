@@ -62,9 +62,9 @@ window.onload=function(){
 
 
 
-    // Gallery Scripts Start
+    // Gallery & contact us Scripts Start
     // Card animation
-    let cards = document.querySelectorAll(".cards");
+    let cards = document.getElementsByClassName("cards");
     
     var counter = 0;                        // counter 
 
@@ -78,6 +78,37 @@ window.onload=function(){
             }  
         }, 100)
     }
-    myLoop();  
+    if(cards.length > 0) {  // check that the items exist in the page before runing the function to avoid errors
+        myLoop(); 
+    }
+        
+
+     
     // Gallery Scripts end
+
+    // FORM CHECKING SCRIPTS FOR CONTACT US PAGE
+    let submitBtn = document.getElementById("submitButton");
+    if(submitBtn){           // check the items exist in the page before runing the function to avoid errors
+        submitBtn.addEventListener("click" , validateForm);
+    }
+    function validateForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        let errorMessage = document.getElementById("errorMessage");
+        if (name.trim() == "" || email.trim() == "" || message.trim() == "") {
+          errorMessage.innerHTML = "Please fill in all fields.";
+          return false;
+        }
+
+        // Email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            errorMessage.innerHTML ="Please enter a valid email address.";
+            return false;
+        }
+        errorMessage.innerHTML ="";
+
+        return true;
+      }
 }
