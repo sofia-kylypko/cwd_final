@@ -412,8 +412,125 @@ aside div img {
 #refPages section:last-child {
     grid-column: 1/5;
 }
+#refPages section {
+    font-size: large;
+}
+#refPages section ul li a {
+    color: black;
+    text-decoration: underline;
+}
+#refPages section ul li a:hover {
+    color: blueviolet;
+}
 
+/* LARGE SNAKE TEAMPLATE for timeline and break down? */
+#datesHeading h1 {
+    display: block;
+    width: 30px auto 30px auto;
+    margin: auto;
+    color: white;
+    text-align: center;
 
+}
+#snake {
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: center;
+}
+#snake .card {
+    margin-top: 2.5px;
+    position: relative;
+}
+#snake .card:nth-child(odd) {
+    padding: 15px 0 15px 15px;
+}
+#snake .card:nth-child(even) {
+    /* padding: 30px 30px 30px 0; */
+    padding: 15px 15px 15px 0;
+}
+/* Global ::before */
+#snake .card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid white;
+}
+/* Setting the border of top, bottom, left */
+#snake .card:nth-child(odd)::before {
+    left: 0;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 2px 0 2px 2px;
+    border-radius: 20px 0 0 20px;
+} 
+/* Setting the border of top, bottom, right */
+#snake .card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 20px 20px 0;
+} 
+/* Removing the border if it is the first card */
+#snake .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+} 
+/* Removing the border if it is the last card  and it's odd */
+#snake .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+/* Removing the border if it is the last card  and it's even */
+#snake .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+/* Information about the timeline */
+#snake .info {
+    display: flex;
+    flex-direction: column;
+    background: rgb(134, 134, 134);
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+} 
+#snake .timeline .card .info h3 {
+    color: rgb(144, 205, 255);
+    position: relative;
+} 
+#snake .timeline .card .info p {
+    margin-top: -10px;
+}
+/* Timeline dot  */
+#snake .timeline .card .info h3::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid rgb(111, 158, 197);
+} 
+/* text right if the card is even  */
+#snake .card:nth-child(even) > .info > h3, #snake .card:nth-child(even) > .info > p {
+    text-align: right;
+}
+/* setting dot to the left/right depending on even or odd number it is */
+#snake .card:nth-child(odd) > .info > h3::before {
+    left: -32px;
+}
+#snake .card:nth-child(even) > .info > h3::before {
+    right: -32px;
+}
+#snake .timeline .card .info a {
+    color:rgb(144, 205, 255);
+    font-style: italic;
+    text-decoration: underline;
+}
+#snake .timeline .card .info a:hover {
+    color: blueviolet;
+}
 
 
 
@@ -605,6 +722,9 @@ aside div img {
     background-color: #d18d35;
     width: 3px;
 }
+
+
+
 
 /*            CONTACT US PAGE STYLE            */
 
