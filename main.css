@@ -584,8 +584,38 @@ aside div img {
     right: 10px;
 }
 
+.timeLineContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    column-gap: 6rem;
+    text-align: justify;
+}
+.timeLineContainer div p{
+    width: fit-content;
+    padding: 0.7rem;
+    background-color: #d18d35;
+    border-radius: 0 5px 5px 0;
+}
+
+.timeLineContainer div{
+    background-color: #d18d35;
+    width: 3px;
+}
 
 /*            CONTACT US PAGE STYLE            */
+
+
+.contactUsIntroduction{
+    text-align: center;
+    font-size: 25px;
+    width: 1000px;
+    margin: 5rem auto ;
+    color: white;
+}
 .contactContainer{
     background-color: white;
     justify-content: space-around;
@@ -695,18 +725,31 @@ aside div img {
 }
 
 
+
 /*        ABOUT US PAGE STYLE         */
 
 .aboutUsContainer{
     background-image: url("images/about/burningman.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 100% auto;
     width: 100%;
-    height: 100vh;
+    padding-bottom: 5rem;
+}
+.aboutUsContainer h1{
+    font-size: 40px;
 }
 .aboutUsContainer .upButton{
     display: none;
 }
+.aboutUsContainer article{
+    padding: 3rem;
+} 
+.aboutUsContainer p {
+    color: white;
+    font-size: 25px;
+    width: 1000px;
+}
+
 @media screen and (max-width: 1300px) {
     .historyArticleContainer{
         flex-direction: column;
