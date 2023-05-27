@@ -869,6 +869,14 @@ aside div img {
     font-size: 25px;
     width: 1000px;
 }
+.referenceMore a{
+    color: white;
+    text-decoration: underline;
+}
+
+/*            MEDIA QUERRIES                 */
+
+
 
 @media screen and (max-width: 1300px) {
     .historyArticleContainer{
@@ -880,5 +888,24 @@ aside div img {
     }
     .flexBox{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .galleryImages{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .imagesCover{
+        display: none;
+    }
+    #general img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .galleryOutfitImages{
+        width: 100%;
     }
 }
