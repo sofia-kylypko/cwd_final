@@ -1294,23 +1294,38 @@ aside div img {
 /*            ABOUT DEVS STYLE                 */
 
 .aboutDevsCards .cards{
+    box-sizing: border-box;
     width: 600px;
     cursor: auto;
     bottom: 0;
     opacity: 1;
     justify-content: flex-start;
+    padding: 1rem;
 }
 .aboutDevsCards .cards img{
     border-radius: 5px;
-    width: 400px;
+    width: 100%;
 }
 .workBreakdown{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
     width: 1000px;
     padding: 2rem;
     margin: auto;
 }
 .workBreakdown ul{
+    width: 350px;
     list-style: none ;
+    font-size: 25px;
+    color: #d18d35;
+    text-align: center;
+}
+.workBreakdown ul li{
+    margin: 1rem;
+}
+.workBreakdown ul li a{
+    color: #d18d35;
 }
 
 /*            MEDIA QUERRIES                 */
@@ -1318,6 +1333,9 @@ aside div img {
 
 
 @media screen and (max-width: 1300px) {
+    .workBreakdown{
+        width: 90% ;
+    }
     .contactUsIntroduction{
         width: 90%;
         text-align: justify;
@@ -1339,6 +1357,9 @@ aside div img {
         width: 90%;
         margin: auto;
     }
+    #top {
+        background-size: cover;
+    }
     .aboutUsContainer{
         background-size: cover;
     }
@@ -1348,6 +1369,10 @@ aside div img {
 }
 
 @media screen and (max-width: 800px) {
+    .aboutDevsCards .cards{
+        padding: 0;
+        width: 95%;
+    }
     .contactForm {
         width: 90%;
     }
