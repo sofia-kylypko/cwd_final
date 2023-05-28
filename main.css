@@ -1314,12 +1314,14 @@ aside div img {
     padding: 2rem;
     margin: auto;
 }
+.workBreakdown .title{
+    text-align: center;
+}
 .workBreakdown ul{
     width: 350px;
     list-style: none ;
     font-size: 25px;
     color: #d18d35;
-    text-align: center;
 }
 .workBreakdown ul li{
     margin: 1rem;
