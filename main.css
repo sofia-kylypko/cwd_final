@@ -531,6 +531,46 @@ aside div img {
 #snake .timeline .card .info a:hover {
     color: blueviolet;
 }
+
+
+/* 10 principleas page */
+#principlesHeading {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+#principlesHeading h1 {
+    font-size: xx-large;
+}
+#principlesHeading p {
+    font-size: large;
+}
+#principlesHeading p a {
+    color: white;
+    text-decoration: underline;
+}
+#principlesHeading p a:hover {
+    color: rgb(194, 135, 250);
+}
+#principlesStack {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+#principlesStack div {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    background-color: rgb(186, 191, 214);
+    border-radius: 20px;
+    margin: 20px auto;
+}
+#principlesStack #emptyPrin {
+    background-color: transparent;
+}
+#principlesStack div h2 {
+    text-align: center;
+}
 /* for medium screen */
 @media screen and (min-width: 200px) and (max-width:1200px){
     #top {
@@ -775,12 +815,7 @@ aside div img {
     }
     /* up button */
     #upButton a div {
-        width: 45px;
-        margin: -40px -5px 0 auto;  
-    }
-    .scrollFixButton {
-        top: 940px;
-        right:-9px;
+        display: none;
     }
     /* principles */
     main #principles h1 {
@@ -830,6 +865,38 @@ aside div img {
     footer p {
         width: 90% !important;
         font: small;
+    }
+    /* 10 principleas page */
+    #principlesHeading {
+        width: 80%;
+    }
+    #principlesHeading h1 {
+        font-size: x-large;
+    }
+    #principlesHeading p {
+        font-size: small;
+    }
+    #principlesStack {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #principlesStack div {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+        background-color: rgb(186, 191, 214);
+        border-radius: 20px;
+        margin: 20px auto;
+    }
+    #principlesStack #emptyPrin {
+        display: none;
+    }
+    #principlesStack div h2 {
+        text-align: center;
+        font-size: 15px;
+    }
+    #principlesStack div p {
+        font-size: small;
     }
 }
 
