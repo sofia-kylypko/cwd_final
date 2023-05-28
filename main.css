@@ -780,7 +780,6 @@ aside div img {
 .contactCards .cards img{
     height: 150px;
     width: auto;
-    filter: grayscale(1);
 }
 .contactCards .cards span{
     margin: 10px 0;
@@ -899,6 +898,18 @@ aside div img {
     color: white;
     text-decoration: underline;
 }
+
+
+/*            ABOUT DEVS STYLE                 */
+
+.aboutDevsCards .cards{
+    width: 600px;
+    cursor: auto;
+}
+.aboutDevsCards .cards img{
+    border-radius: 5px;
+}
+
 
 /*            MEDIA QUERRIES                 */
 
