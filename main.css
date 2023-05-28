@@ -81,6 +81,9 @@ header div button {
     right: 0;
     z-index : 3;
 }
+#menuOpen , #menuClose{
+    cursor: pointer;
+}
 /* ----footer---- */
 footer {
     background-color: rgb(186, 191, 214);
@@ -324,14 +327,17 @@ aside {
 aside div p {
     color: white;
     text-align: center;
-    font-size:x-large;
+    font-size:30px;
 }
 aside div ul {
-    font-size: larger;
+    font-size: 25px;
     display: block;
     width: 70%;
     margin: 30px 30px auto auto;
     list-style-image: url(images/right-arrow.png);
+}
+aside div ul li{
+    margin: 1rem 0;
 }
 aside div ul li a {
     color: white;
@@ -620,6 +626,7 @@ aside div img {
         font-size:x-large;
     }
     aside div ul {
+        font-size: 20px;
         margin: 30px 30px auto 20px;
     }
     aside div img {
@@ -1046,7 +1053,6 @@ aside div img {
     margin: 3rem 0;
     text-align: justify;
 }
-
 .historyArticleContainer{
     display: flex;
     justify-content: space-around;
@@ -1057,6 +1063,7 @@ aside div img {
 }
 .historyArticleContainer img{ 
     align-self: center;
+    width: 100%;
 }
 
 .imageContainer{
@@ -1149,7 +1156,7 @@ aside div img {
 .contactContainer{
     background-color: white;
     justify-content: space-around;
-    padding: 5rem;
+    padding: 3rem 1rem;
 }
 .contactContainer #upButton{
     display: none;
@@ -1212,6 +1219,7 @@ aside div img {
 }
 
 .contactForm {
+    box-sizing: border-box;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1258,13 +1266,15 @@ aside div img {
 
 
 /*        ABOUT US PAGE STYLE         */
-
+.aboutus #upButton{
+    display: none;
+}
 .aboutUsContainer{
     background-image: url("images/about/burningman.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 .aboutUsContainer h1{
     font-size: 40px;
@@ -1272,13 +1282,10 @@ aside div img {
 .aboutUsContainer .upButton{
     display: none;
 }
-.aboutUsContainer article{
-    padding: 3rem;
-} 
+
 .aboutUsContainer p {
     color: white;
     font-size: 25px;
-    width: 1000px;
 }
 .referenceMore a{
     color: white;
@@ -1289,23 +1296,40 @@ aside div img {
 /*            ABOUT DEVS STYLE                 */
 
 .aboutDevsCards .cards{
+    box-sizing: border-box;
     width: 600px;
     cursor: auto;
     bottom: 0;
     opacity: 1;
     justify-content: flex-start;
+    padding: 1rem;
 }
 .aboutDevsCards .cards img{
     border-radius: 5px;
-    width: 400px;
+    width: 100%;
 }
 .workBreakdown{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
     width: 1000px;
     padding: 2rem;
     margin: auto;
 }
+.workBreakdown .title{
+    text-align: center;
+}
 .workBreakdown ul{
+    width: 350px;
     list-style: none ;
+    font-size: 25px;
+    color: #d18d35;
+}
+.workBreakdown ul li{
+    margin: 1rem;
+}
+.workBreakdown ul li a{
+    color: #d18d35;
 }
 
 /*            MEDIA QUERRIES                 */
@@ -1313,6 +1337,23 @@ aside div img {
 
 
 @media screen and (max-width: 1300px) {
+    .workBreakdown{
+        width: 90% ;
+    }
+    .contactUsIntroduction{
+        width: 90%;
+        text-align: justify;
+    }
+    .contactForm {
+        margin: 1rem auto;
+        width: 500px;
+    }
+    .galleryContainer .imagesCover h1{ 
+        font-size: 30px !important;
+    }
+    .imagesCover img{
+        width: 100%;
+    }
     .historyArticleContainer{
         flex-direction: column;
     }
@@ -1320,19 +1361,40 @@ aside div img {
         width: 90%;
         margin: auto;
     }
+    #top {
+        background-size: cover;
+    }
+    .aboutUsContainer{
+        background-size: cover;
+    }
     .flexBox{
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .aboutDevsCards .cards{
+        padding: 0;
+        width: 95%;
+    }
+    .contactForm {
+        width: 90%;
+    }
+    .galleryContainer .imagesCover h1{ 
+        font-size: 25px !important;
+    }
     .galleryImages{
         width: 100%;
     }
+    .historyMiddleArticles{
+        text-align: justify;
+        padding: 2rem 0;
+    }
 }
 @media screen and (max-width: 560px) {
-    .imagesCover{
-        display: none;
+
+    .galleryContainer .imagesCover h1{ 
+        font-size: 20px !important;
     }
     #general img {
         width: 100%;
@@ -1341,5 +1403,11 @@ aside div img {
 @media screen and (max-width: 450px) {
     .galleryOutfitImages{
         width: 100%;
+    }
+    .historyArticleContainer{
+        padding: 2rem 0;
+    }
+    .historyMiddleArticles{
+        width: 90%;
     }
 }
