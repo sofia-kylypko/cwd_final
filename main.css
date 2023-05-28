@@ -582,6 +582,7 @@ aside div img {
     border: solid 3px rgb(105, 128, 235);
 }
 #principlesStack #emptyPrin {
+    border: none;
     background-color: transparent;
 }
 #principlesStack div h2 {
