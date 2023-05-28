@@ -1290,6 +1290,7 @@ aside div img {
     cursor: auto;
     bottom: 0;
     opacity: 1;
+    justify-content: flex-start;
 }
 .aboutDevsCards .cards img{
     border-radius: 5px;
