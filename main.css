@@ -8,7 +8,7 @@ body {
     background: #272727;
     margin:0;
     height: auto;
-    /* font-family: "Russo One"; */
+    /* font-family: "Karla","Russo One"; */
 }
 body a {
     text-decoration: none;
@@ -19,7 +19,6 @@ body a {
 #top {
     height:600px;
     width: 100%;
-    /* background-image:url('images/top.jpeg') ; */
     background-image:url('gallery/burnings/burning_concert.jpg') ;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -411,9 +410,6 @@ aside div img {
 #refPages section h1 {
     font-size: x-large;
 }
-#refPages section:last-child {
-    grid-column: 1/5;
-}
 #refPages section {
     font-size: large;
 }
@@ -580,6 +576,11 @@ aside div img {
     border-radius: 20px;
     margin: 20px auto;
     border: solid 3px rgb(105, 128, 235);
+}
+#principlesStack div img {
+    width: 50px;
+    display: block;
+    margin: auto;
 }
 #principlesStack #emptyPrin {
     border: none;
