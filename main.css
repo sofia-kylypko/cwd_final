@@ -564,12 +564,16 @@ aside div img {
     background-color: rgb(186, 191, 214);
     border-radius: 20px;
     margin: 20px auto;
+    border: solid 3px rgb(105, 128, 235);
 }
 #principlesStack #emptyPrin {
     background-color: transparent;
 }
 #principlesStack div h2 {
     text-align: center;
+}
+.aboutDevsCards .cards:last-child {
+    
 }
 /* for medium screen */
 @media screen and (min-width: 200px) and (max-width:1200px){
