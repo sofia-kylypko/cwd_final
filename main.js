@@ -108,7 +108,16 @@ window.onload=function(){
             return false;
         }
         errorMessage.innerHTML ="";
-
+        let sentMessage = document.getElementById("sentMessage");
+        let sentMessageContainer = document.getElementById("sentMessageContainer");
+        sentMessageContainer.style.display = "block";
+        sentMessage.innerHTML = message;
+        document.getElementById("contactUsBody").style.filter = "blur(4px)";
         return true;
+      }
+      document.getElementById("messageClose").addEventListener("click" , closeMessage)
+      function closeMessage(){
+        sentMessageContainer.style.display = "none";
+        document.getElementById("contactUsBody").style.filter ="none";
       }
 }
