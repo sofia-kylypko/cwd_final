@@ -1154,7 +1154,7 @@ aside div img {
 .contactContainer{
     background-color: white;
     justify-content: space-around;
-    padding: 5rem;
+    padding: 3rem 1rem;
 }
 .contactContainer #upButton{
     display: none;
@@ -1217,6 +1217,7 @@ aside div img {
 }
 
 .contactForm {
+    box-sizing: border-box;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1263,13 +1264,15 @@ aside div img {
 
 
 /*        ABOUT US PAGE STYLE         */
-
+.aboutus #upButton{
+    display: none;
+}
 .aboutUsContainer{
     background-image: url("images/about/burningman.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 .aboutUsContainer h1{
     font-size: 40px;
@@ -1277,13 +1280,10 @@ aside div img {
 .aboutUsContainer .upButton{
     display: none;
 }
-.aboutUsContainer article{
-    padding: 3rem;
-} 
+
 .aboutUsContainer p {
     color: white;
     font-size: 25px;
-    width: 1000px;
 }
 .referenceMore a{
     color: white;
@@ -1318,6 +1318,20 @@ aside div img {
 
 
 @media screen and (max-width: 1300px) {
+    .contactUsIntroduction{
+        width: 90%;
+        text-align: justify;
+    }
+    .contactForm {
+        margin: 1rem auto;
+        width: 500px;
+    }
+    .galleryContainer .imagesCover h1{ 
+        font-size: 30px !important;
+    }
+    .imagesCover img{
+        width: 100%;
+    }
     .historyArticleContainer{
         flex-direction: column;
     }
@@ -1325,19 +1339,33 @@ aside div img {
         width: 90%;
         margin: auto;
     }
+    .aboutUsContainer{
+        background-size: cover;
+    }
     .flexBox{
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .contactForm {
+        width: 90%;
+    }
+    .galleryContainer .imagesCover h1{ 
+        font-size: 25px !important;
+    }
     .galleryImages{
         width: 100%;
     }
+    .historyMiddleArticles{
+        text-align: justify;
+        padding: 2rem 0;
+    }
 }
 @media screen and (max-width: 560px) {
-    .imagesCover{
-        display: none;
+
+    .galleryContainer .imagesCover h1{ 
+        font-size: 20px !important;
     }
     #general img {
         width: 100%;
@@ -1346,5 +1374,11 @@ aside div img {
 @media screen and (max-width: 450px) {
     .galleryOutfitImages{
         width: 100%;
+    }
+    .historyArticleContainer{
+        padding: 2rem 0;
+    }
+    .historyMiddleArticles{
+        width: 90%;
     }
 }
