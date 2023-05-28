@@ -524,15 +524,29 @@ aside div img {
 #snake .card:nth-child(even) > .info > h3::before {
     right: -32px;
 }
-#snake .timeline .card .info a {
+#snake .timeline .card .info p {
+    text-align: center !important;
+}
+#snake .timeline .card .info p a {
     color:rgb(144, 205, 255);
     font-style: italic;
     text-decoration: underline;
 }
-#snake .timeline .card .info a:hover {
+#snake .timeline .card .info p a:hover {
     color: blueviolet;
 }
 
+/* dates page */
+#indepHeading {
+    color: white;
+    text-align: center;
+}
+.sepPage .timeline .card .info a {
+    color: white !important;
+}
+.sepPage .timeline .card .info p a:hover {
+    color: blueviolet !important;
+}
 
 /* 10 principleas page */
 #principlesHeading {
@@ -568,6 +582,7 @@ aside div img {
     border: solid 3px rgb(105, 128, 235);
 }
 #principlesStack #emptyPrin {
+    border: none;
     background-color: transparent;
 }
 #principlesStack div h2 {
