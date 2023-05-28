@@ -4,6 +4,7 @@ html{
     scroll-behavior: smooth;
 } 
 body {
+    position: relative;
     background: #272727;
     margin:0;
     height: auto;
@@ -925,7 +926,7 @@ aside div img {
 }
 .x3{
     font-size: 70px;
-    text-shadow: 2px 2px 2px #d18d35;
+    
 }
 .title{
     text-align: left;
@@ -1027,7 +1028,30 @@ aside div img {
 
 /*            CONTACT US PAGE STYLE            */
 
-
+#contactUsBody{
+    transition: all 0.5s;
+}
+#sentMessageContainer{
+    display: none;
+    position: fixed;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+    font-size: 25px;
+    padding: 1rem 2rem;
+    box-shadow: 3px 3PX 3PX black;
+    z-index: 10;
+}
+#messageClose{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    cursor: pointer;
+    width: fit-content;
+}
 .contactUsIntroduction{
     text-align: center;
     font-size: 25px;
@@ -1055,7 +1079,6 @@ aside div img {
 .contactCards .cards img{
     height: 150px;
     width: auto;
-    filter: grayscale(1);
 }
 .contactCards .cards span{
     margin: 10px 0;
@@ -1106,6 +1129,7 @@ aside div img {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: fit-content;
+    padding: 2rem;
 }
 
 .contactForm h3 {
@@ -1121,6 +1145,7 @@ aside div img {
 
 .contactForm input[type="text"],
 .contactForm textarea {
+    box-sizing: border-box;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -1172,6 +1197,18 @@ aside div img {
     color: white;
     text-decoration: underline;
 }
+
+
+/*            ABOUT DEVS STYLE                 */
+
+.aboutDevsCards .cards{
+    width: 600px;
+    cursor: auto;
+}
+.aboutDevsCards .cards img{
+    border-radius: 5px;
+}
+
 
 /*            MEDIA QUERRIES                 */
 
