@@ -186,7 +186,7 @@ main #circles .text p {
 main #principles {
     text-align: center;
     color: white;
-    margin-top: -70px;
+    margin-top: -70px 0px 0px 0px;
 }
 main #principles h1 {
     font-size:xx-large;
@@ -206,7 +206,7 @@ main #principles .stuckHolder {
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 35%);
+    grid-template-columns: repeat(3, 33.3%);
     grid-template-rows: 250px; 
 }
 main #principles .stuckHolder div {
@@ -297,7 +297,7 @@ main #principles .stuckHolder  a.last-child:hover div{
     position: fixed;
     top: 640px;
     right:0;
-    z-index : 3;
+    z-index : 4;
 }
 /* ----aside---- */
 .asideShow {
@@ -431,7 +431,6 @@ aside div img {
     margin: auto;
     color: white;
     text-align: center;
-
 }
 #snake {
     margin: 0px auto 20px auto;
@@ -532,7 +531,307 @@ aside div img {
 #snake .timeline .card .info a:hover {
     color: blueviolet;
 }
-
+/* for medium screen */
+@media screen and (min-width: 200px) and (max-width:1200px){
+    #top {
+        height:300px;
+    }
+    #top h1{
+        text-align: center;
+        margin: auto;
+        font-size: 30px;
+    }
+    #top h1 span {
+        font-size: 90px;
+    }
+    /* header */
+    header div a h1{
+        font-size: 60px !important;
+    }
+    header div img {
+        margin-top: 18px;
+        margin-right: 5px;
+        height: 30px;
+    }
+    /* aside */
+    aside div p {
+        color: white;
+        text-align: center;
+        font-size:x-large;
+    }
+    aside div ul {
+        margin: 30px 30px auto 20px;
+    }
+    aside div img {
+        height: 30px;
+    }
+    #general img {
+        width: 350px;
+    }
+    /* circles */
+    main #circles {
+        width: 90%;
+    }
+    .container li:first-child img {
+        margin: 30px 0 0 4% !important;
+    }
+    .container li:nth-child(3) img {
+        margin: 8px 0 0 -50%;
+    }
+    .container li:last-child img {
+        margin: 40px 0  0 -80% !important;
+    }
+    /* principles */
+    main #principles {
+        margin-right: 0px;
+        margin-top: -100px;
+    }
+    main #principles .stuckHolder {
+        margin: auto;
+        display: block;
+    }
+    main #principles .stuckHolder div {
+        padding: 10px;
+    }
+    main #principles .stuckHolder div h2 {
+        margin-top: 5px;
+    }
+    main #principles .stuckHolder div p {
+        display: none;
+    }
+    main #principles .stuckHolder div:first-child p {
+        display: block;
+    }
+    main #principles .stuckHolder div:first-child:hover{
+        border-radius: solid 3px white;
+    }
+    /* reasons */
+    #reason {
+        width: 70%;
+        padding: 30px;
+    }
+    #reason div {
+        display: flex;
+        justify-content: space-around;
+    }
+    #reason h1 {
+        margin: 0;
+        font-size: xx-large;
+        text-shadow: 5px 5px red;
+    }
+    #reason div p {
+        display: block;
+        width: 45%;
+    }
+    #reason iframe {
+        display: block;
+        width: 70%;
+        height: 300px;
+        margin:  30px auto auto auto;
+        border-radius: 20px;
+    }
+    /* up button */
+    #upButton a div {
+        width: 45px;
+        margin: -40px -5px 0 auto;  
+    }
+    .scrollFixButton {
+        top: 940px;
+        right:-9px;
+    }
+}
+/* for phone screen */
+@media screen and (min-width: 100px) and (max-width:700px){
+    #top {
+        height:150px !important;
+    }
+    #top h1{
+        font-size: 20px;
+    }
+    #top h1 span {
+        font-size: 50px;
+    }
+    /* header */
+    header div a h1{
+        font-size: 30px !important;
+        background-size: 150px;
+    }
+    header div img {
+        margin-top: 5px;
+        margin-right: 0px;
+        height: 20px;
+    }
+    /* aside */
+    .asideShow {
+        width:50%;
+    }
+    aside div p {
+        font-size:large;
+    }
+    aside div img {
+        height: 20px;
+    }
+    #general img {
+        width: 60px;
+    }
+    /* circles */
+    main #circles .text p {
+        display: block;
+    }
+    main #circles .text {
+        display: block;
+    }
+    main #circles {
+        width: 90%;
+    }
+    .container ul {
+        height: 250px;
+        margin-bottom: -20px;
+    }
+    .container li:first-child img {
+        margin: 30px 0 0 4% !important;
+    }
+    .container li:nth-child(3) img {
+        margin: 8px 0 0 -50%;
+    }
+    .container li:last-child img {
+        margin: 40px 0  0 -80% !important;
+    }
+    .container ul img {
+        width: 300px;
+        height: 200px !important;
+    }
+    .container li:first-child img {
+        margin: 20px 0 0 15% !important;
+        height: 200px !important;
+        width: 200px;
+    }
+    .container li:nth-child(2) img {
+        width: 200px;
+        height: 220px !important;
+        margin-top: 10px;
+        margin-left: -70%;
+    }
+    .container li:nth-child(3) img {
+        width: 220px;
+        height: 220px !important; 
+        margin: 10px 0 0  -80%;
+    }
+    .container li:last-child img {
+        width: 200px !important;
+        height: 200px !important; 
+        margin: 15px 0  0 -150% !important;
+    }
+    /* principles */
+    main #principles {
+        margin: 0;
+        margin-right: 0px;
+        margin-top: -100px;
+    }
+    main #principles .stuckHolder {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    main #principles .stuckHolder div {
+        padding: 10px;
+    }
+    main #principles .stuckHolder div h2 {
+        margin-top: 5px;
+    }
+    main #principles .stuckHolder div p {
+        display: none;
+    }
+    main #principles .stuckHolder div:first-child p {
+        display: block;
+    }
+    main #principles .stuckHolder div:first-child:hover{
+        border-radius: solid 3px white;
+    }
+    /* reasons */
+    #reason {
+        width: 70%;
+        padding: 30px;
+    }
+    #reason div {
+        display: flex;
+        justify-content: space-around;
+    }
+    #reason h1 {
+        margin: 0;
+        font-size: xx-large;
+        text-shadow: 5px 5px red;
+    }
+    #reason div p {
+        display: block;
+        width: 45%;
+    }
+    #reason iframe {
+        display: block;
+        width: 70%;
+        height: 300px;
+        margin:  30px auto auto auto;
+        border-radius: 20px;
+    }
+    /* up button */
+    #upButton a div {
+        width: 45px;
+        margin: -40px -5px 0 auto;  
+    }
+    .scrollFixButton {
+        top: 940px;
+        right:-9px;
+    }
+    /* principles */
+    main #principles h1 {
+        font-size: large;
+    }
+    main #principles p {
+        font-size: small;
+    }
+    main #principles .stuckHolder div h2 {
+        margin-top: 5px;
+        font-size: large;
+    }
+    main #principles .stuckHolder div p {
+        font-size: small;
+    }
+    /* reasons */
+    #reason div {
+        display: block;
+    }
+    #reason div p {
+        display: block;
+        width: 100% !important;
+    }
+    #reason iframe {
+        width: 100%;
+    }
+    /* dates */
+    #datesHeading h1 {
+        font-size: large;
+    }
+    #snake .card {
+        width: 80%;
+        margin: auto;
+    }
+    #snake .timeline .card .info h3 {
+        font-size: large;
+    } 
+    #snake .timeline .card .info p {
+        margin-top: -10px;
+    }
+    /* Setting the border of top, bottom, left */
+    #snake .card:nth-child(odd)::before {
+        top: -2.2px;
+        bottom: -2.2px;
+    } 
+    /* footer */
+    footer p {
+        width: 90% !important;
+        font: small;
+    }
+}
 
 
 
