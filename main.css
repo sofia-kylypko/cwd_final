@@ -19,6 +19,7 @@ body a {
 #top {
     height:600px;
     width: 100%;
+    /* background-image:url('images/top.jpeg') ; */
     background-image:url('gallery/burnings/burning_concert.jpg') ;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -572,9 +573,6 @@ aside div img {
 #principlesStack div h2 {
     text-align: center;
 }
-.aboutDevsCards .cards:last-child {
-    
-}
 /* for medium screen */
 @media screen and (min-width: 200px) and (max-width:1200px){
     #top {
@@ -913,9 +911,7 @@ aside div img {
 
 /* GALLERY PAGE STYLE */
 
-.galleryMain section{
-    margin: 30px 0;
-}
+
 #galleryBody *, #bodyHistory *{ 
     box-sizing: border-box;
     text-decoration: none;
@@ -971,9 +967,6 @@ aside div img {
 }
 .galleryContainer .imagesCover{
     position: relative;
-}
-.galleryContainer .imagesCover img{
-    width: 100%;
 }
 .galleryContainer .imagesCover h1 , .imageTitle{
     color: white;
@@ -1138,7 +1131,7 @@ aside div img {
 .contactContainer{
     background-color: white;
     justify-content: space-around;
-    padding: 3rem 10px;
+    padding: 5rem;
 }
 .contactContainer #upButton{
     display: none;
@@ -1201,7 +1194,6 @@ aside div img {
 }
 
 .contactForm {
-    box-sizing: border-box;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1252,11 +1244,9 @@ aside div img {
 .aboutUsContainer{
     background-image: url("images/about/burningman.jpg");
     background-repeat: no-repeat;
+    background-size: 100% auto;
     width: 100%;
     padding-bottom: 5rem;
-}
-.aboutus #upButton{
-    display: none;
 }
 .aboutUsContainer h1{
     font-size: 40px;
@@ -1264,9 +1254,13 @@ aside div img {
 .aboutUsContainer .upButton{
     display: none;
 }
+.aboutUsContainer article{
+    padding: 3rem;
+} 
 .aboutUsContainer p {
     color: white;
     font-size: 25px;
+    width: 1000px;
 }
 .referenceMore a{
     color: white;
@@ -1300,14 +1294,6 @@ aside div img {
 
 
 @media screen and (max-width: 1300px) {
-    .contactUsIntroduction{
-        width: 90%;
-        text-align: justify;
-    }
-    .imagesCover h1{
-        font-size: 30px !important;
-    }
-
     .historyArticleContainer{
         flex-direction: column;
     }
@@ -1318,33 +1304,14 @@ aside div img {
     .flexBox{
         flex-direction: column;
     }
-    .contactForm{
-        margin: 2rem auto;
-        width: 560px;
-    }
 }
 
 @media screen and (max-width: 800px) {
-    .contactForm{
-        width: 95%;
-    }
-    .imagesCover h1{
-        font-size: 20px !important;
-    }
-    .historyArticleContainer img{
-        width: 100%;
-    }
     .galleryImages{
         width: 100%;
     }
 }
-@media screen and (max-width: 600px) {
-    .aboutUsContainer{
-        background-size: cover;
-    }
-}
 @media screen and (max-width: 560px) {
-    
     .imagesCover{
         display: none;
     }
@@ -1355,13 +1322,5 @@ aside div img {
 @media screen and (max-width: 450px) {
     .galleryOutfitImages{
         width: 100%;
-    }
-    .historyArticle, .timeLineContainer, .historyMiddleArticles{
-        padding: 5px !important;
-        font-size: 15px !important;
-    }
-    .historyMiddleArticles{
-        width: 90%;
-        text-align: justify;
     }
 }
