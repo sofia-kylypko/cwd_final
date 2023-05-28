@@ -925,6 +925,10 @@ aside div img {
     #principlesStack div p {
         font-size: small;
     }
+    /* reference page */
+    #refPages {
+        display: block !important;
+    }
 }
 
 
