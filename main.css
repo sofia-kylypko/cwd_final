@@ -80,6 +80,9 @@ header div button {
     right: 0;
     z-index : 3;
 }
+#menuOpen , #menuClose{
+    cursor: pointer;
+}
 /* ----footer---- */
 footer {
     background-color: rgb(186, 191, 214);
@@ -323,14 +326,17 @@ aside {
 aside div p {
     color: white;
     text-align: center;
-    font-size:x-large;
+    font-size:30px;
 }
 aside div ul {
-    font-size: larger;
+    font-size: 25px;
     display: block;
     width: 70%;
     margin: 30px 30px auto auto;
     list-style-image: url(images/right-arrow.png);
+}
+aside div ul li{
+    margin: 1rem 0;
 }
 aside div ul li a {
     color: white;
