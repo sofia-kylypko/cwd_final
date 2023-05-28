@@ -647,7 +647,7 @@ aside div img {
 .historyMiddleArticles{
     padding: 2rem;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     width: 70%;
     margin: auto;
     text-align: center;
@@ -655,7 +655,7 @@ aside div img {
 .historyArticle{
     padding: 2rem;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     width: 50%;
     margin: 3rem 0;
     text-align: justify;
@@ -708,7 +708,7 @@ aside div img {
     width: 80%;
     margin: auto;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     column-gap: 6rem;
     text-align: justify;
 }
@@ -905,11 +905,21 @@ aside div img {
 .aboutDevsCards .cards{
     width: 600px;
     cursor: auto;
+    bottom: 0;
+    opacity: 1;
 }
 .aboutDevsCards .cards img{
     border-radius: 5px;
+    width: 400px;
 }
-
+.workBreakdown{
+    width: 1000px;
+    padding: 2rem;
+    margin: auto;
+}
+.workBreakdown ul{
+    list-style: none ;
+}
 
 /*            MEDIA QUERRIES                 */
 
