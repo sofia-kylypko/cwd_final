@@ -73,7 +73,7 @@ window.onload=function(){
             cards[counter].style.bottom = "0";
             cards[counter].style.opacity = "1"; 
             counter++;                    //  increment the counter
-            if (counter < 5) {           //  if the counter < 5, loop back
+            if (counter < cards.length) {           //  if the counter < 5, loop back
               myLoop();       
             }  
         }, 100)
@@ -113,9 +113,10 @@ window.onload=function(){
         sentMessageContainer.style.display = "block";
         sentMessage.innerHTML = message;
         document.getElementById("contactUsBody").style.filter = "blur(4px)";
+        document.getElementById("messageClose").addEventListener("click" , closeMessage);
         return true;
       }
-      document.getElementById("messageClose").addEventListener("click" , closeMessage)
+      
       function closeMessage(){
         sentMessageContainer.style.display = "none";
         document.getElementById("contactUsBody").style.filter ="none";
